@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initConditions(){
-         wifiIsCorrect= wifiName.equals(wifiAvielHome);
+         wifiIsCorrect= wifiName.contains(wifiAvielHome);
          isPlugged = UtilFuncs.isPlugged(this);
          isMuted= UtilFuncs.getSoundLevelOfPhoneRing(this)==0;
          isUserNameCorrect=(ValUsername.equals("admin@gmail.com"));
